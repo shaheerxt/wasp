@@ -1542,4 +1542,4 @@ DATABASE_URL=postgresql://postgres:devpass1234@localhost:5432/postgres
 To run Wasp app in production, you will need to switch from `SQLite` to `PostgreSQL`.
 1. Set `app.db.system` to `PostgreSQL` and set `DATABASE_URL` env var accordingly (as described [above](/docs/language/features#postgresql)).
 2. Delete old migrations, since they are SQLite migrations and can't be used with PostgreSQL: `rm -r migrations/`.
-3. Run `wasp db migrate-dev` to apply new changes and create new, initial migration. You will need to have your postgres database running while doing this (check [above](/docs/language/features#postgresql) for easy way to get it running).
+3. Run `wasp db migrate-dev` to apply new changes and create new, initial migration. You will need to have your postgres database running while doing this (check [above](/docs/language/features#postgresql) for easy way to get it running) .
